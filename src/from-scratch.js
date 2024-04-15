@@ -48,7 +48,7 @@ const listAllValues = (obj) => {
 const convertToMatrix = (arr) => {
   if (arr[0] === undefined || arr[0] === null) return [];
   const totalArr = [];
-  totalArr.push(Object.keys(arr[0]));
+  totalArr.push(Object.keys(arr[0])); // [[name, age, bio]]
   for (let e in arr) {
     totalArr.push(Object.values(arr[e]))
   }
